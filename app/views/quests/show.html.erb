@@ -17,21 +17,19 @@
 </div>
 
 <div class="quests">
-  <p>
-    Sticker located under bench
-    Quest Value = <%= @quest.point_value%>
-  </p>
+  <p>Sticker located under bench</p>
+  <p>Quest Value = <%= @quest.point_value%></p>
+</div>  
 
-  <form action="/quests/<%=@quest.id%>" method="post">
-    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>">
-    <label for="">Enter your code: </label>
-    <input type="text" name="answer_input" value="">
-    <input type="hidden" name="quest_id" value="<%=@quest.id %>">
-    <input type="hidden" name="point_value" value="<%=@quest.point_value%>">
-    <button>Submit</button>
-  </form>
+<form action="/quests/<%=@quest.id%>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>">
+  <input type="text" name="answer_input" placeholder="enter your code:" value="">
+  <input type="hidden" name="quest_id" value="<%=@quest.id %>">
+  <input type="hidden" name="point_value" value="<%=@quest.point_value%>">
+  <button>Submit</button>
+</form>
 
-</div>
+
 
 <!-- google maps api script -->
 
@@ -42,7 +40,7 @@
     var taskLocation = {lat: <%= @quest.latitude%> , lng: <%=@quest.longitude %>}
 
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 16,
+      zoom: 18,
       center: taskLocation,
       styles: [
   {

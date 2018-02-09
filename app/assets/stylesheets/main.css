@@ -2,134 +2,148 @@
   box-sizing: border-box;
 }
 
-@media (min-width: 375px) {
-
-  body {
-    margin: 0;
-  }
-
-  header {
-    color: rgb(188, 38, 26);
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  header h1 {
-    font-family: 'Adamina', serif;
-    letter-spacing: 1px;
-    font-weight: 400;
-    font-size: 85px;
-    text-transform: uppercase;
-    margin: 30px 0;
-  }
-
-  nav {
-    display: flex;
-    justify-content: center;
-    color: rgb(188, 38, 26);
-    padding: 10px 0;
-  }
-
-  nav :hover {
-    opacity: .5;
-  }
-
-  .fake-link, nav a {
-    font-family: 'Adamina', serif;
-    letter-spacing: 1px;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin: 0 10px;
-  }
-
-  .fake-link {
-    border: none;
-    font-family: 'Adamina', serif;
-    letter-spacing: 1px;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-/*    margin: 30px 0 30px 0;*/
-  }
-
-  .register {
-    display: flex;
-    justify-content: center;
-    color: rgb(188, 38, 26);
-    font-family: 'Adamina', serif;
-    letter-spacing: 1px;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-
-  .register a {
-    margin: 10px 0;
-  }
-
-  h2, ul {
-    text-align: center;
-    padding: 0 50px;
-  }
-
-  h2 {
-    font-family: 'Adamina', serif;
-    letter-spacing: 1px;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin: 30px 0 30px 0;
-  }
-
-  .instructions, .rules {
-    list-style:none;
-    text-align: left;
-    text-indent:1em;
-    font-size: 12px;
-    margin:50px;
-  }
-
-  .instructions {
-    padding: 0 50px 80px 50px;
-  }
-
-  .instructions li , .rules li {
-    margin: 0 0 20px 0;
-  }
-
-  .map-wrapper {
-    height: 50vh;
-    width: 100vw;
-    padding: 0 50px;
-  }
-
-  #map {
-    height: 100%;
-  }
-
-  .button-wrapper a {
-    display: block;
-    text-align: center;
-    font-family: 'Adamina', serif;
-    letter-spacing: 1px;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: 20px;
-    background-color: rgb(188, 38, 26);
-    color: #FFFFFF;
-    margin: 80px 50px 80px 50px;
-  }
-
-  .locations-index-button-wrapper a, .locations-show-button-wrapper a {
-    display: block;
-    padding: 20px;
-    background-color: rgb(188, 38, 26);
-    color: #FFFFFF;
-    margin: 50px 50px 50px 50px;
-    height: 100px;
-  }
-
-
+body {
+  margin: 0;
 }
+
+header {
+  color: rgb(188, 38, 26);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  font-family: 'Adamina', serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 85px;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  color: rgb(188, 38, 26);
+  margin: 0 0 60px 0;
+}
+
+nav :hover {
+  opacity: .5;
+}
+
+.fake-link, nav a {
+  font-family: 'Adamina', serif;
+  letter-spacing: 1px;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.fake-link {
+  border: none;
+  font-family: 'Adamina', serif;
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  color: rgb(188, 38, 26);
+  font-family: 'Adamina', serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.register a {
+  margin: 10px 0;
+}
+
+h2, ul {
+  text-align: center;
+  padding: 0 50px;
+}
+
+h2 {
+  font-family: 'Adamina', serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 30px 0 30px 0;
+}
+
+.instructions, .rules {
+  list-style:none;
+  font-size: 12px;
+  margin:50px;
+}
+
+.instructions {
+  padding: 0 50px 80px 50px;
+}
+
+.instructions li , .rules li {
+  margin: 0 0 20px 0;
+}
+
+.map-wrapper {
+  height: 50vh;
+  width: 100vw;
+  padding: 0 50px;
+}
+
+#map {
+  height: 100%;
+}
+
+.button-wrapper a {
+  display: block;
+  text-align: center;
+  font-family: 'Adamina', serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 20px;
+  background-color: rgb(188, 38, 26);
+  color: #FFFFFF;
+  margin: 80px 50px 80px 50px;
+}
+
+.locations-index-button-wrapper a, .locations-show-button-wrapper a {
+  display: block;
+  padding: 20px;
+  background-color: rgb(188, 38, 26);
+  color: #FFFFFF;
+  margin: 50px 50px 50px 50px;
+  height: 100px;
+}
+
+.login-form {
+  text-align: center;
+}
+
+.location-name {
+  font-size: 30px;
+}
+
+.location-title {
+  font-size: 50px;
+}
+
+.quests p {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+
 
