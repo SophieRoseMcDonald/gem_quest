@@ -1,8 +1,12 @@
-<h1>Teams</h1>
 
-<% @teams.each do |team| %>
-  <div>
-    <a href="/teams/<%=team.id%>"><h2><%= team.name %></h2></a>
-    <p><%= team.team_quests.pluck(:points_record).sum %></p>
+  <% @teams.each do |team| %>
+  <div class="teamindex">
+    <img id="avatar" src="<%=team.image_url%>" alt="">
+    <a href="/teams/<%=team.id%>">
+      <h2><%= team.name %></h2>
+    </a>
+    <p><%= team.team_quests.pluck(:points_record).sum %>
+      Points</p>
+
   </div>
 <% end %>
