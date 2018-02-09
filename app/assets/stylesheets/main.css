@@ -145,5 +145,14 @@ h2 {
   text-transform: uppercase;
 }
 
-
-
+#avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.teamindex {
+  display: block;
+  text-align: center;
+  align-self: center;
+  padding-bottom: 70px;
+}

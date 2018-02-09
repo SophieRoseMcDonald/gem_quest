@@ -18,8 +18,8 @@
 
 <div class="quests">
   <p>Sticker located under bench</p>
-  <p>Quest Value = <%= @quest.point_value%></p>
-</div>  
+  <p>Quest Value: <%= @quest.point_value%></p>
+</div>
 
 <form action="/quests/<%=@quest.id%>" method="post">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>">
@@ -36,7 +36,7 @@
 <script>
   function initMap() {
 
-    // var taskLocation = {lat: -37.8182711, lng: 144.9670618} 
+    // var taskLocation = {lat: -37.8182711, lng: 144.9670618}
     var taskLocation = {lat: <%= @quest.latitude%> , lng: <%=@quest.longitude %>}
 
     var map = new google.maps.Map(document.getElementById('map'), {
